@@ -2,8 +2,8 @@
 title: Robotics Research
 subtitle: Designing Robotic Systems
 layout: default
-modal-id: 1
-date: 2020-04-10
+modal-id: 2
+date: 2020-04-09
 img: cst-group.png
 thumbnail: cst-group.png
 alt: robotic-system
