@@ -646,6 +646,7 @@ section h3.section-preheading {
 }
 
 .team-member img {
+    width:23em;
     margin: 0 auto;
     border: 7px solid #fff;
 }
