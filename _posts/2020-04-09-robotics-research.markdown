@@ -4,8 +4,8 @@ subtitle: Designing Robotic Systems
 layout: default
 modal-id: 2
 date: 2020-04-09
-img: cst-group.png
-thumbnail: cst-group.png
+img: cst-group.jpeg
+thumbnail: cst-group.jpeg
 alt: robotic-system
 project-date: April 2020
 client: Start Bootstrap

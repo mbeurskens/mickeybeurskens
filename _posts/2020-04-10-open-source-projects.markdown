@@ -4,8 +4,8 @@ subtitle: Software For Your Own Projects
 layout: default
 modal-id: 3
 date: 2020-04-10
-img: open.jpg
-thumbnail: open.jpg
+img: open.jpeg
+thumbnail: open.jpeg
 alt: github-logo
 project-date: April 2020
 client: Start Bootstrap
