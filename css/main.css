@@ -1,0 +1,31 @@
+/* Stylesheet for the Beurskens Blog.
+
+  Designed and built by Mickey Beurskens.
+
+  Colour scheme:
+  #FFFFFF - White
+  #E5E5E5 - Platinum
+  #FCA311 - Orange Web
+  #14213D - Oxford Blue
+  #000000 - Black
+
+  Fonts:
+  Merriweather (titles)
+  Roboto (long text)
+
+*/
+
+:root {
+  --color-white: #FFFFFF;
+  --color-platinum: #E5E5E5;
+  --color-orange-web: #FCA311;
+  --color-oxford-blue: #14213D;
+  --color-black: #000000;
+
+  --font-title: "Roboto";
+  --font-blog-text: "Merriweather";
+}
+
+h1 {
+  font-family: var(--font-title);
+}
