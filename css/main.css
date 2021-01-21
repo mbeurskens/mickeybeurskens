@@ -13,6 +13,11 @@
   Merriweather (titles)
   Roboto (long text)
 
+  Index
+  1.0 - Root
+  2.0 - General
+  3.0 - Navigation
+
 */
 
 :root {
@@ -24,8 +29,52 @@
 
   --font-title: "Roboto";
   --font-blog-text: "Merriweather";
+
+}
+
+/* 2.0 - General */
+
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
   font-family: var(--font-title);
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+/* 3.0 Navigation */
+
+.home-header {
+  background-color: var(--color-orange-web);
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: 100vw;
+  height: 84px;
+}
+
+.nav {
+  float: right;
+}
+
+.nav-logo {
+  float: left;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav-list-item {
+  display: inline;
 }
