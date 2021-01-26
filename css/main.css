@@ -63,11 +63,13 @@ h1 {
   padding: 0;
   margin: 0px;
   display: block;
-  width: 100vw;
   height: 84px;
 }
 
-.header-corner {}
+.header-corner {
+  margin-top: -0.5px;
+  margin-left: -1px;
+}
 
 .nav {
   float: right;
@@ -87,10 +89,28 @@ h1 {
   display: inline;
 }
 
-
 /* 4.0 Main Page */
 
 .banner {
   background-image: url("../images/banner.jpg");
   background-size: cover;
+  height: 60vh;
+  display: block;
+}
+
+.divider {
+  height: 40px;
+  margin: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: auto;
+  display: block;
+}
+
+.divider-1 {
+  background-image: url("../images/divider.svg")
+}
+
+.divider-2 {
+  background-image: url("../images/divider-2.svg");
 }
