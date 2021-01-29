@@ -27,8 +27,8 @@
   --color-oxford-blue: #14213D;
   --color-black: #000000;
 
-  --font-title: "Roboto";
-  --font-blog-text: "Merriweather";
+  --font-title: Merriweather;
+  --font-blog-text: Roboto;
 
 }
 
@@ -47,6 +47,12 @@
 
 h1 {
   font-family: var(--font-title);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.005em;
 }
 
 .vertical-center {
@@ -91,9 +97,19 @@ h1 {
 
 /* 4.0 Main Page */
 
+.home-main {
+  background-image: url("../images/background.svg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 30vh;
+}
+
 .banner {
   background-image: url("../images/banner.jpg");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
   height: 60vh;
   display: block;
 }
@@ -113,4 +129,8 @@ h1 {
 
 .divider-2 {
   background-image: url("../images/divider-2.svg");
+}
+
+.home-title {
+  text-align: center;
 }
