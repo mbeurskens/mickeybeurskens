@@ -1,10 +1,18 @@
 "use strict"
 
+
+function getNewSummary() {
+  const div = document.createElement("div")
+  let title = document.createElement("h3");
+  let title_text = document.createTextNode("Header");
+
+  title.appendChild(title_text);
+  div.appendChild(title)
+  return div;
+}
+
 function createHomeSummary(id) {
-  let par = document.createElement("p");
-  let text = document.createTextNode("Test text");
-  par.appendChild(text);
-  id.appendChild(par);
+  id.appendChild(getNewSummary());
 }
 
 function createHomeSummaries() {
@@ -15,8 +23,6 @@ function createHomeSummaries() {
   for (let sum of summaries ) {
     createHomeSummary(sum);
   }
-
-  createHomeSummary(sum1);
 }
 
 createHomeSummaries();
