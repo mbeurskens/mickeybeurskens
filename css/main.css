@@ -99,7 +99,6 @@ h1 {
   background-image: url("../images/background.svg");
   background-attachment: fixed;
   background-size: cover;
-  height: 30vh;
 }
 
 .banner {
@@ -133,7 +132,7 @@ h1 {
   text-align: center;
 }
 
-.highlights-flex {
+.highlights-container {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
@@ -147,4 +146,15 @@ h1 {
   background-color: #c4c4c4;
   display: block;
   border-radius: 35px 0 35px 0;
+}
+
+.recent-post-container {
+
+}
+
+.recent-post-box {
+  background-color: red;
+  display: block;
+  width: 70%;
+  margin: auto;
 }

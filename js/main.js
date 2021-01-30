@@ -2,27 +2,55 @@
 
 
 function getNewSummary() {
+  /**
+   *  Get a new summary block.
+   *
+   *  @return div containing summary.
+   */
   const div = document.createElement("div")
   let title = document.createElement("h3");
   let title_text = document.createTextNode("Header");
 
   title.appendChild(title_text);
   div.appendChild(title)
+  div.className = "highlight-box"
   return div;
 }
 
-function createHomeSummary(id) {
-  id.appendChild(getNewSummary());
+function getNewRecentPost() {
+  /**
+   *  Return new div for a recent post summary.
+   *
+   *  @return div containing recent post summary.
+   */
+
+   const div = document.createElement("div")
+    let title = document.createElement("h3");
+    let title_text = document.createTextNode("Header");
+
+    title.appendChild(title_text);
+    div.appendChild(title)
+    div.className = "recent-post-box"
+    return div;
 }
 
-function createHomeSummaries() {
-  let summaries = [document.getElementById('home-sum-1'),
-    document.getElementById('home-sum-2'),
-    document.getElementById('home-sum-3')];
+function createHomeHighlights() {
+  let summaries = 3;
+  let sumDiv = document.getElementById('home-highlights');
 
-  for (let sum of summaries ) {
-    createHomeSummary(sum);
+  for (let sum = 0; sum < summaries; sum++) {
+    sumDiv.appendChild(getNewSummary());
   }
 }
 
-createHomeSummaries();
+function createRecentPosts() {
+  let summaries = 3;
+  let sumDiv = document.getElementById('home-recent-posts');
+
+  for (let sum = 0; sum < summaries; sum++) {
+    sumDiv.appendChild(getNewRecentPost());
+  }
+}
+
+createHomeHighlights();
+createRecentPosts();
