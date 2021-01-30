@@ -7,13 +7,13 @@ function getNewSummary() {
    *
    *  @return div containing summary.
    */
-  const div = document.createElement("div")
+  const div = document.createElement("div");
   let title = document.createElement("h3");
   let title_text = document.createTextNode("Header");
 
   title.appendChild(title_text);
-  div.appendChild(title)
-  div.className = "highlight-box"
+  div.appendChild(title);
+  div.className = "highlight-box";
   return div;
 }
 
@@ -23,15 +23,13 @@ function getNewRecentPost() {
    *
    *  @return div containing recent post summary.
    */
+   const div = document.createElement("div");
+   let img = document.createElement("img");
+   img.src = "images/banner.jpg";
 
-   const div = document.createElement("div")
-    let title = document.createElement("h3");
-    let title_text = document.createTextNode("Header");
-
-    title.appendChild(title_text);
-    div.appendChild(title)
-    div.className = "recent-post-box"
-    return div;
+   div.appendChild(img);
+   div.className = "recent-post-box";
+   return div;
 }
 
 function createHomeHighlights() {
