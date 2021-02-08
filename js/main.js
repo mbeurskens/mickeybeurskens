@@ -30,9 +30,17 @@ function getNewRecentPostTextBox() {
   let title = document.createElement("h2");
   title.className = "recent-post-box-title";
   let subTitle = document.createElement("h3");
-  title.className = "recent-post-box-sub-title";
+  subTitle.className = "recent-post-box-sub-title";
   let summaryTitle = document.createElement("p");
   summaryTitle.className = "recent-post-box-summary";
+
+  // Debug
+  let ttext = document.createTextNode("Debug");
+  let subttext = document.createTextNode("Debug");
+  let sumtext = document.createTextNode("Debug");
+  title.appendChild(ttext);
+  subTitle.appendChild(subttext);
+  summaryTitle.appendChild(sumtext);
 
   // Create text text
   textBox.appendChild(title);
