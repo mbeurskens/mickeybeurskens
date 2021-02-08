@@ -148,17 +148,29 @@ h1 {
   border-radius: 35px 0 35px 0;
 }
 
-.recent-post-container {
-
+.recent-posts-container {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
 }
 
 .recent-post-box {
-  background-color: red;
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  background-color: blue;
   width: 70%;
+  padding-top: 30px;
   margin: auto;
 }
 
-.recent-post-box img {
-  width: 50px;
+.recent-post-box-img {
+  flex: 1;
+  height: 200px;
+  width: 200px;
+  border-radius: 35px 0 35px 0;
+}
+
+.recent-post-box-text {
+  flex: 3;
+  background-color: red;
 }
