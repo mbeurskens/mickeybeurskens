@@ -81,6 +81,7 @@ h1 {
 
 .nav-logo {
   float: left;
+  margin-left: 25px;
 }
 
 .nav-list {
@@ -91,6 +92,18 @@ h1 {
 
 .nav-list-item {
   display: inline;
+  font-family: var(--font-title);
+  font-size: 18;
+  margin-right: 0.5em;
+}
+
+.nav-link:link, .nav-link:visited {
+  text-decoration: none;
+  color: var(--color-oxford-blue);
+}
+
+.nav-link:hover {
+  color: var(--color-platinum);
 }
 
 /* 4.0 Main Page */
@@ -179,6 +192,7 @@ h1 {
 .home-footer {
   background-color: var(--color-orange-web);
   display: flex;
+  justify-content: space-between;
   padding: 0;
   margin: 0px;
   height: 60px;
