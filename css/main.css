@@ -18,6 +18,7 @@
   2.0 - General
   3.0 - Navigation
   4.0 - Main Page
+    4.1 - Recent Posts
   5.0 - Footer
 */
 
@@ -109,9 +110,10 @@ h1 {
 /* 4.0 Main Page */
 
 .home-main {
-  background-image: url("../images/background.svg");
-  background-attachment: fixed;
+  background-image: url("../images/background-im.png");
+  background-attachment: scroll;
   background-size: cover;
+  background-position: 0 180px;
 }
 
 .banner {
@@ -161,6 +163,8 @@ h1 {
   border-radius: 35px 0 35px 0;
 }
 
+/* 4.1 Recent Posts */
+
 .recent-posts-container {
   display: flex;
   flex-direction: column;
@@ -170,7 +174,6 @@ h1 {
 .recent-post-box {
   display: flex;
   justify-content: space-between;
-  background-color: blue;
   width: 70%;
   padding-top: 30px;
   margin: auto;
@@ -185,10 +188,48 @@ h1 {
 
 .recent-post-box-text {
   flex: 3;
-  background-color: red;
+  margin-left: 5%;
+}
+
+.recent-post-box-text h2 {
+  font-family: var(--font-titles);
+  font-style: italic;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 45px;
+  letter-spacing: 0.005em;
+  color: var(--color-oxford-blue);
+}
+
+.recent-post-box-text h3 {
+  font-family: var(--font-titles);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--color-orange-web);
+  margin-top: -4px;
+  margin-left: 1px;
+
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.005em;
+}
+
+.recent-post-box-text p {
+  margin-top: 0.4em;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0.005em;
 }
 
 /* 5.0 Footer */
+
 .home-footer {
   background-color: var(--color-orange-web);
   display: flex;
@@ -196,6 +237,7 @@ h1 {
   padding: 0;
   margin: 0px;
   height: 60px;
+  margin-top: 2em;
 }
 
 .footer-nav {
