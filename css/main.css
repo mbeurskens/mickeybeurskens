@@ -80,22 +80,25 @@ h1 {
   float: right;
 }
 
-.nav-logo {
+.nav-logo-header {
   float: left;
   margin-left: 25px;
 }
 
 .nav-list {
+  display: flex;
+  justify-content: space-between;
   list-style-type: none;
   margin: 0px;
   padding: 0px;
+  width: 17em;
+  margin-right: 25px;
 }
 
 .nav-list-item {
   display: inline;
   font-family: var(--font-title);
   font-size: 18;
-  margin-right: 0.5em;
 }
 
 .nav-link:link, .nav-link:visited {
@@ -234,13 +237,43 @@ h1 {
 .home-footer {
   background-color: var(--color-orange-web);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0;
   margin: 0px;
   height: 60px;
   margin-top: 2em;
 }
 
+.footer-flex {
+  flex: 1;
+}
+
 .footer-nav {
   float: center;
+}
+
+.footer-nav a {
+  font-size: 0.8em;
+}
+
+.nav-list-footer {
+  width: 14em;
+}
+
+.footer-logo {
+  height: 1em;
+  float: right;
+  margin-right: 25px;
+}
+
+.footer-images {
+  min-width: 90px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 25px;
+}
+
+.footer-images img {
+  display: inline;
+  padding-right: 5px;
 }
