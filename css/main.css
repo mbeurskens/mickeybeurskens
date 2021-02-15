@@ -61,6 +61,11 @@ h1 {
   position: relative;
 }
 
+.max-width {
+  max-width: 1000px;
+  margin: auto;
+}
+
 /* 3.0 Navigation */
 
 .home-header {
@@ -69,6 +74,10 @@ h1 {
   margin: 0px;
   display: block;
   height: 84px;
+}
+
+.home-flexbox {
+  height: inherit;
 }
 
 .header-corner {
@@ -236,12 +245,16 @@ h1 {
 
 .home-footer {
   background-color: var(--color-orange-web);
-  display: flex;
   justify-content: center;
   padding: 0;
   margin: 0px;
   height: 60px;
   margin-top: 2em;
+}
+
+.home-footer-flexbox {
+  height: inherit;
+  display: flex;
 }
 
 .footer-flex {

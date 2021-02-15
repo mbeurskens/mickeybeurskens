@@ -12,16 +12,18 @@
 <body>
 
   <header class="home-header">
-    <a href="" class="logo-link">
-      <img src="images/logo.svg" alt="" class="nav-logo-header vertical-center">
-    <nav class="nav vertical-center">
-      <ul class="nav-list">
-        <li class="nav-list-item"><a href="" class="nav-link">Home</a></li>
-        <li class="nav-list-item"><a href="" class="nav-link">Blog</a></li>
-        <li class="nav-list-item"><a href="" class="nav-link">About</a></li>
-        <li class="nav-list-item"><a href="" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="home-flexbox max-width">
+      <a href="" class="logo-link">
+        <img src="images/logo.svg" alt="" class="nav-logo-header vertical-center">
+      <nav class="nav vertical-center">
+        <ul class="nav-list">
+          <li class="nav-list-item"><a href="" class="nav-link">Home</a></li>
+          <li class="nav-list-item"><a href="" class="nav-link">Blog</a></li>
+          <li class="nav-list-item"><a href="" class="nav-link">About</a></li>
+          <li class="nav-list-item"><a href="" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="home-main">
@@ -30,14 +32,14 @@
     </banner>
     <br>
 
-    <div class="highlights">
+    <div class="highlights max-width">
       <h1 class="home-title">Hightlights</h1>
       <div class="divider divider-1"></div>
       <div class="highlights-container" id="home-highlights"></div>
     </div>
     <br>
 
-    <div class="recent-posts">
+    <div class="recent-posts max-width">
       <h1 class="home-title">Recent Posts</h1>
       <div class="divider divider-2"></div>
       <div class="recent-posts-container" id="home-recent-posts"></div>
@@ -45,22 +47,24 @@
   </main>
 
   <footer class="home-footer">
-    <div class="footer-flex footer-images">
-      <a><img src="images/linkedin.png" alt="" class="linkedin vertical-center"></a>
-      <a><img src="images/github.png" alt="" class="github vertical-center"></a>
-    </div>
-    <dev class="footer-flex">
-      <nav class="footer-nav vertical-center">
-        <ul class="nav-list nav-list-footer">
-          <li class="nav-list-item"><a href="" class="nav-link">Home</a></li>
-          <li class="nav-list-item"><a href="" class="nav-link">Blog</a></li>
-          <li class="nav-list-item"><a href="" class="nav-link">About</a></li>
-          <li class="nav-list-item"><a href="" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-    </dev>
-    <dev class="footer-flex">
-      <img src="images/logo.svg" alt="" class="nav-logo footer-logo vertical-center">
+    <div class="home-footer-flexbox max-width">
+      <div class="footer-flex footer-images">
+        <a><img src="images/linkedin.png" alt="" class="linkedin vertical-center"></a>
+        <a><img src="images/github.png" alt="" class="github vertical-center"></a>
+      </div>
+      <dev class="footer-flex">
+        <nav class="footer-nav vertical-center">
+          <ul class="nav-list nav-list-footer">
+            <li class="nav-list-item"><a href="" class="nav-link">Home</a></li>
+            <li class="nav-list-item"><a href="" class="nav-link">Blog</a></li>
+            <li class="nav-list-item"><a href="" class="nav-link">About</a></li>
+            <li class="nav-list-item"><a href="" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </dev>
+      <dev class="footer-flex">
+        <img src="images/logo.svg" alt="" class="nav-logo footer-logo vertical-center">
+      </dev>
     </dev>
   </footer>
 </body>
