@@ -60,7 +60,7 @@ function getNewRecentPost() {
 
   // Set image data
   let img = document.createElement("img");
-  img.src = "images/banner.jpg";
+  img.src = "src/images/banner.jpg";
   img.className = "recent-post-box-img"
 
   div.appendChild(img);
