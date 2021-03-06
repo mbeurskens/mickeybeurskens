@@ -8,8 +8,8 @@ function getNewSummary() {
    *  @return div containing summary.
    */
   const div = document.createElement("div");
-  let title = document.createElement("h3");
-  let title_text = document.createTextNode("Header");
+  const title = document.createElement("h3");
+  const title_text = document.createTextNode("Header");
 
   title.appendChild(title_text);
   div.appendChild(title);
@@ -23,21 +23,21 @@ function getNewRecentPostTextBox() {
    *
    *  @return div containing text box.
    */
-  let textBox = document.createElement("div");
+  const textBox = document.createElement("div");
   textBox.className = "recent-post-box-text";
 
   // Text box title, subtitle and getNewSummary
-  let title = document.createElement("h2");
+  const title = document.createElement("h2");
   title.className = "recent-post-box-title";
-  let subTitle = document.createElement("h3");
+  const subTitle = document.createElement("h3");
   subTitle.className = "recent-post-box-sub-title";
-  let summaryTitle = document.createElement("p");
+  const summaryTitle = document.createElement("p");
   summaryTitle.className = "recent-post-box-summary";
 
   // Debug
-  let ttext = document.createTextNode("Debug");
-  let subttext = document.createTextNode("Debug");
-  let sumtext = document.createTextNode("Debug");
+  const ttext = document.createTextNode("Debug");
+  const subttext = document.createTextNode("Debug");
+  const sumtext = document.createTextNode("Debug");
   title.appendChild(ttext);
   subTitle.appendChild(subttext);
   summaryTitle.appendChild(sumtext);
@@ -59,7 +59,7 @@ function getNewRecentPost() {
   const div = document.createElement("div");
 
   // Set image data
-  let img = document.createElement("img");
+  const img = document.createElement("img");
   img.src = "src/images/banner.jpg";
   img.className = "recent-post-box-img"
 
@@ -73,8 +73,8 @@ function createHomeHighlights() {
   /**
    *  Create highlights on the home page.
    */
-  let summaries = 3;
-  let sumDiv = document.getElementById('home-highlights');
+  const summaries = 3;
+  const sumDiv = document.getElementById('home-highlights');
 
   for (let sum = 0; sum < summaries; sum++) {
     sumDiv.appendChild(getNewSummary());
@@ -85,8 +85,8 @@ function createRecentPosts() {
   /**
    *  Create highlights on the home page.
    */
-  let summaries = 3;
-  let sumDiv = document.getElementById('home-recent-posts');
+  const summaries = 3;
+  const sumDiv = document.getElementById('home-recent-posts');
 
   for (let sum = 0; sum < summaries; sum++) {
     sumDiv.appendChild(getNewRecentPost());
