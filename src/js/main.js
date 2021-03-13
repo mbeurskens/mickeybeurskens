@@ -63,8 +63,10 @@ function createHomeHighlights() {
      */
     var summaries = 3;
     var sumDiv = document.getElementById('home-highlights');
-    for (var sum = 0; sum < summaries; sum++) {
-        sumDiv.appendChild(getNewSummary());
+    if (sumDiv) {
+        for (var sum = 0; sum < summaries; sum++) {
+            sumDiv.appendChild(getNewSummary());
+        }
     }
 }
 function createRecentPosts() {
@@ -73,8 +75,10 @@ function createRecentPosts() {
      */
     var summaries = 3;
     var sumDiv = document.getElementById('home-recent-posts');
-    for (var sum = 0; sum < summaries; sum++) {
-        sumDiv.appendChild(getNewRecentPost());
+    if (sumDiv) {
+        for (var sum = 0; sum < summaries; sum++) {
+            sumDiv.appendChild(getNewRecentPost());
+        }
     }
 }
 createHomeHighlights();

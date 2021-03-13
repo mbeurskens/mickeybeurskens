@@ -76,8 +76,10 @@ function createHomeHighlights() {
   const summaries = 3;
   const sumDiv = document.getElementById('home-highlights');
 
-  for (let sum = 0; sum < summaries; sum++) {
-    sumDiv.appendChild(getNewSummary());
+  if (sumDiv) {
+    for (let sum = 0; sum < summaries; sum++) {
+      sumDiv.appendChild(getNewSummary());
+    }
   }
 }
 
@@ -88,8 +90,10 @@ function createRecentPosts() {
   const summaries = 3;
   const sumDiv = document.getElementById('home-recent-posts');
 
-  for (let sum = 0; sum < summaries; sum++) {
-    sumDiv.appendChild(getNewRecentPost());
+  if (sumDiv) {
+    for (let sum = 0; sum < summaries; sum++) {
+      sumDiv.appendChild(getNewRecentPost());
+    }
   }
 }
 
